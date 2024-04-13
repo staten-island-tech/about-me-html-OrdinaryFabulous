@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    color: #3498db;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p, ol, ul {
+    color: #666;
+}
+
+a {
+    color: #3498db;
+}
+
+h1, h2, p, ol, ul, img {
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideIn 3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+.slide-in {
+    animation: slideIn 3s ease-in-out;
+    -webkit-animation: slideIn 3s ease-in-out;
+    -moz-animation: slideIn 3s ease-in-out;
+    -o-animation: slideIn 3s ease-in-out;
+    -ms-animation: slideIn 3s ease-in-out;
+}
+
+.pop-in {
+    animation: popIn 3s ease-in-out;
+    -webkit-animation: popIn 3s ease-in-out;
+    -moz-animation: popIn 3s ease-in-out;
+    -o-animation: popIn 3s ease-in-out;
+    -ms-animation: popIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
